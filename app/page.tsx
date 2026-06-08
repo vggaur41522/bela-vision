@@ -6,6 +6,7 @@ import { LoShuGrid } from '@/components/LoShuGrid';
 import { AdjustmentSimulator } from '@/components/AdjustmentSimulator';
 import { cn } from '@/lib/utils';
 import ReactMarkdown from 'react-markdown';
+import Image from 'next/image';
 import { Save, History, ChevronRight, CheckCircle2, Play, Trash2 } from 'lucide-react';
 
 type ProfileInput = {
