@@ -2,8 +2,8 @@ import OpenAI from 'openai';
 import { NextRequest, NextResponse } from "next/server";
 
 // Use production URL if available (for Vercel deployment via ngrok)
-// Otherwise fall back to local development URL
-const baseURL = process.env.OLLAMA_BASE_URL || process.env.OLLAMA_BASE_URL_PROD || 'http://localhost:11434/v1';
+// Default to ngrok URL, fall back to localhost for local development
+const baseURL = process.env.OLLAMA_BASE_URL || process.env.OLLAMA_BASE_URL_PROD || 'https://impromptu-coach-syrup.ngrok-free.dev/v1' || 'http://localhost:11434/v1';
 
 const client = new OpenAI({
   baseURL,
