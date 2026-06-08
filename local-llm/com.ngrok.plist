@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.ngrok</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>ngrok</string>
+        <string>http</string>
+        <string>11434</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/tmp/ngrok.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/ngrok.error.log</string>
+    <key>UserName</key>
+    <string>%USERNAME%</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>NGROK_AUTHTOKEN</key>
+        <string>3ErwGftIlHgNeT4lK4T0o1EqfJx_6A5n1jRirVFuGi18eBgEb</string>
+    </dict>
+</dict>
+</plist>
